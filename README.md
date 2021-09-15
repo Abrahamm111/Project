@@ -57,22 +57,22 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|Vm-1      | Yes(tpc)            |  80                  |
-|Vm-2      |yes(tpc)             | 80                   |
-|Vm-3      | yes(tpc)            | 80                   |
+| Jump Box | Yes/No              |22                    |
+|Vm-1      | Yes(tcp)            |  80                  |
+|Vm-2      |yes(tcp)             | 80                   |
+|Vm-3      | yes(tcp)            | 80                   |
 |ELK      |   yes (tcp)          |     5601             |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - _TODO: What is the main advantage of automating configuration with Ansible?_
- rapid config, and deployment of virtual machines ensure all prescribed decurity measure
+        - rapid config, and deployment of virtual machines ensure all prescribed decurity measure
 seperates OS and software updates
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- intall docker
-- install python
-install python 3
+    - intall docker
+   - install python
+    - install python 3
 download dvw and launch docker container
 enable docker service
 
