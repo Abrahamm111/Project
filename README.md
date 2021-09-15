@@ -7,10 +7,10 @@ The files in this repository were used to configure the network depicted below.
 https://drive.google.com/file/d/1DgPqcLNxfDttJuzIx4wUeg3OvQwqu-hl/view?usp=sharing
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._ 
-  nano /etc/ansible/pentest.yml
-nano /etc/ansible/elk.yml
-nano /etc/ansible/filebeat.yml
+- _TODO: Enter the playbook file._ 
+  - nano /etc/ansible/pentest.yml
+  - nano /ansible/elk.yml
+  - nano /ansible/filebeat.yml
 
 This document contains the following details:
 - Description of the Topologu
@@ -30,9 +30,9 @@ Load balancing ensures that the application will be highly available, in additio
  -  Jump Box minimizes the attack surface, ensures remote connections.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the config and system files.
 - _TODO: What does Filebeat watch for?
-monitor log files
+  - monitor log files
 - _TODO: What does Metricbeat record?_
-collect operating files, statistics as well
+ -  collect operating files, statistics as well
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -53,7 +53,7 @@ Only the JUmp BOX machine can accept connections from the Internet. Access to th
 40.122.155.147
 Machines within the network can only be accessed by JumpBOx.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address? 10.0.07
-
+ - WEB - 3 10.0.7
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
